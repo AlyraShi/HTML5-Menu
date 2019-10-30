@@ -1,0 +1,36 @@
+body {padding:5em; background:#b7ebe7;}
+
+.wrap {width:200px; margin:auto;  z-index:1;}
+
+.msg {
+  color: black;
+  text-align:center;
+  font-family: 'Bree Serif', Courier, monospaced;
+  font-size:3.5em;
+  width:200px;
+  position:absolute;
+  margin:55px 0 0 2px;
+  pointer-events: none; 
+}
+
+.sticker {
+  width:500px;
+  height:500px;
+  position:absolute;
+  background-image: url(sun.png);
+  background-position: left ;
+  background-repeat: no-repeat;
+  animation: spin 10s linear infinite;
+  /*Set our animation play state to paused initially */
+  animation-play-state: paused; 
+}
+
+.sticker:hover {
+  
+  animation-play-state: running;
+}
+
+
+@keyframes spin {
+  100% {transform: rotate(1turn); }
+}
